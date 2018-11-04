@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bj1"
+    tools:context=".DengluActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp" />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:src="@drawable/tx1"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:gravity="center"
+
+        android:text="请登录"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="42sp"
+            android:layout_height="wrap_content"
+
+            android:gravity="right"/>
+        <EditText
+            android:id="@+id/edt_username2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:hint="请输入用户名"
+            android:width="800px"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:width="42sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+
+            android:textSize="24dp"/>
+        <EditText
+            android:id="@+id/edt_password2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:hint="请输入登录密码"
+            android:width="800px"
+            android:password="true"
+            />
+    </LinearLayout>
+
+
+    <Button
+        style="?android:attr/borderlessButtonStyle"
+        android:id="@+id/button1"
+        android:onClick="commit"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="28sp"
+        android:text="登陆" />
+
+    <Button
+        style="?android:attr/borderlessButtonStyle"
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="立即注册"
+        android:onClick="zhuce"
+
+        android:layout_gravity="right"
+        android:gravity="center"/>
+
+
+</LinearLayout>
